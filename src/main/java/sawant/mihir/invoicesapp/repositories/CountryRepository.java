@@ -4,4 +4,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import sawant.mihir.invoicesapp.entities.Country;
 
 public interface CountryRepository extends JpaRepository<Country, Long> {
+
+    Country findByCode(String code);
+
 }
