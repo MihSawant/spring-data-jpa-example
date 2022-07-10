@@ -1,8 +1,7 @@
 package sawant.mihir.invoicesapp.entities;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
 import java.util.Objects;
 
 @Entity(name = "Country")
@@ -14,8 +13,9 @@ public class Country {
 
     private String name;
 
-
     private String code;
+
+
 
     public Country(){}
 

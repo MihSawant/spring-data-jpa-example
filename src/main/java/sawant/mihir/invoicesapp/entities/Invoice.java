@@ -9,14 +9,11 @@ public class Invoice {
     @Id
     @GeneratedValue
     private Long id;
-
     private String blNumber;
-
 
     private boolean aaptaCertificate;
 
     @ManyToOne
-    @JoinColumn(name = "country_id", foreignKey = @ForeignKey(name = "COUNTRY_FK_ID"))
     private Country country;
 
     public Invoice(){}
@@ -52,7 +49,6 @@ public class Invoice {
     public void setCountry(Country country) {
         this.country = country;
     }
-
 
     @Override
     public boolean equals(Object o) {
