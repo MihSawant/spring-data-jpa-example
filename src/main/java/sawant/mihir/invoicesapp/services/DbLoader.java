@@ -76,10 +76,6 @@ public class DbLoader {
 
         System.out.println("----------> Data Loaded into the DB <----------");
 
-        System.out.println("Getting Country by code: IN");
-        System.out.println(countryRepo.findByCode("IN").toString());
-        System.out.println("Getting Invoices of Country IN: ");
-        invoiceRepo.findByCountryId(1L).forEach(System.out::println);
 
     }
 }
