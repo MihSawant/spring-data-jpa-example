@@ -69,9 +69,8 @@ public class DbLoader {
         c31Invoice.setBlNumber("AE0056");
         c31Invoice.setCountry(c3);
 
-        invoiceRepo.saveAllAndFlush(List.of(c1Invoice, c12Invoice, c3Invoice, c31Invoice, c4Invoice));
+        invoiceRepo.saveAll(List.of(c1Invoice, c12Invoice, c3Invoice, c31Invoice, c4Invoice));
 
-        c31Invoice.setAaptaCertificate(false);
 
 
         System.out.println("----------> Data Loaded into the DB <----------");
